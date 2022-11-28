@@ -6,3 +6,11 @@ D:\C# Project\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.csproj.SuggestedBind
 D:\C# Project\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.csproj.CoreCompileInputs.cache
 D:\C# Project\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.exe
 D:\C# Project\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.pdb
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\bin\Debug\ConsoleMenu.exe.config
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\bin\Debug\ConsoleMenu.exe
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\bin\Debug\ConsoleMenu.pdb
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.csproj.AssemblyReference.cache
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.csproj.SuggestedBindingRedirects.cache
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.csproj.CoreCompileInputs.cache
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.exe
+D:\GItHub\ConsoleMenu\ConsoleMenu\ConsoleMenu\obj\Debug\ConsoleMenu.pdb

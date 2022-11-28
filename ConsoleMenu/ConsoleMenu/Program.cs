@@ -16,16 +16,27 @@ namespace ConsoleMenu
             string nickname = "";
             string password = "";
             string enteredPassword;
+            const string CommandSetNickname = "1";
+            const string CommandChangeFont = "2";
+            const string CommandSetPassword = "3";
+            const string CommandShowInfo = "4";
+            const string CommandExit = "5";
 
             Console.WriteLine("Здравствуйте. Здесь вы можете ввести информацию и корректировать её.");
-            Console.WriteLine(" 1. Установить никнейм \n 2. Изменить цвет шрифта на синий. \n 3. Установить пароль. \n 4. Вывести имя после установки пароля. \n 5. Выход");
+            Console.WriteLine($" 1. Установить никнейм - {CommandSetNickname} \n" +
+                $" 2. Изменить цвет шрифта на синий - {CommandChangeFont}. \n" +
+                $" 3. Установить пароль - {CommandSetPassword}. \n" +
+                $" 4. Вывести имя после установки пароля - {CommandShowInfo}. \n" +
+                $" 5. Выход - {CommandExit}");
+
 
             while (isWork)
             {
                 string choice = Console.ReadLine();
+
                 switch (choice)
                 {
-                    case "1":
+                    case CommandSetNickname:
                         if (isBlocked == true)
                         {
                             Console.WriteLine("Введите пароль: ");
@@ -43,11 +54,11 @@ namespace ConsoleMenu
                         }
                         break;
 
-                    case "2":
+                    case CommandChangeFont:
                         Console.ForegroundColor = ConsoleColor.DarkBlue;
                         break;
 
-                    case "3":
+                    case CommandSetPassword:
                         if (isBlocked == true)
                         {
                             Console.WriteLine("Введите пароль: ");
@@ -67,11 +78,12 @@ namespace ConsoleMenu
                         }
                         break;
 
-                    case "4":
+                    case CommandShowInfo:
                         if (isBlocked == true)
                         {
                             Console.WriteLine("Введите пароль: ");
                             enteredPassword = Console.ReadLine();
+
                             if (enteredPassword == password)
                             {
                                 Console.WriteLine($"Здравствуйте {nickname} \n");
@@ -83,13 +95,12 @@ namespace ConsoleMenu
                         }
                         break;
 
-                    case "5":
+                    case CommandExit:
                         Console.WriteLine("До свидание!");
                         isWork = false;
                         break;
                 }
             }
-
         }
     }
 }
