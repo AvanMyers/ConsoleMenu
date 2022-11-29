@@ -10,17 +10,16 @@ namespace ConsoleMenu
     {
         static void Main(string[] args)
         {
+            const string CommandSetNickname = "nick";
+            const string CommandChangeFont = "font";
+            const string CommandSetPassword = "pass";
+            const string CommandShowInfo = "info";
+            const string CommandExit = "exit";
             bool isWork = true;
             bool isBlocked = false;
-            bool isNicknameAvailible = false;
             string nickname = "";
             string password = "";
             string enteredPassword;
-            const string CommandSetNickname = "1";
-            const string CommandChangeFont = "2";
-            const string CommandSetPassword = "3";
-            const string CommandShowInfo = "4";
-            const string CommandExit = "5";
 
             Console.WriteLine("Здравствуйте. Здесь вы можете ввести информацию и корректировать её.");
             Console.WriteLine($" 1. Установить никнейм - {CommandSetNickname} \n" +
@@ -37,21 +36,8 @@ namespace ConsoleMenu
                 switch (choice)
                 {
                     case CommandSetNickname:
-                        if (isBlocked == true)
-                        {
-                            Console.WriteLine("Введите пароль: ");
-                            enteredPassword = Console.ReadLine();
-                            if (enteredPassword == password && isNicknameAvailible)
-                            {
-                                Console.WriteLine($"Здравствуйте {nickname} \n"); 
-                            }
-                        }
-                        else
-                        {
                             Console.WriteLine("Введите ваше Никнейм");
                             nickname = Console.ReadLine();
-                            isNicknameAvailible = true;
-                        }
                         break;
 
                     case CommandChangeFont:
